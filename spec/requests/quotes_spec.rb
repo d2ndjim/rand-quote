@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Quotes', type: :request do
   describe 'GET /index' do 
     before(:each) do
+      Quote.create text: "Test Quote", author: 'Anonymous'
       get root_path
     end
 

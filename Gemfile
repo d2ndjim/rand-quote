@@ -18,6 +18,8 @@ gem 'rest-client'
 
 gem 'dotenv-rails'
 
+gem 'rails-controller-testing'
+
 gem 'rspec-rails'
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
