@@ -1,4 +1,11 @@
-<div>
-  <h1 class="font-bold text-4xl">Quotes#index</h1>
-  <p>Find me in app/views/quotes/index.html.erb</p>
+<div class="w-full">
+  <h1 class="text-center text-3xl font-bold mb-4">Generate Random Quotes</h1>
+    
+  <div class="flex flex-col place-items-center">
+    <h2 class="text-2xl"><%= @quote.text %></h2>
+    <h2 class="text-xl">-<%= @quote.author %></h2>
+    <div class="mt-8">
+      <%= link_to 'Click for more!', root_path, class: "font-semibold border-2 border-solid bg-black text-white px-4 py-3" %>
+    </div>
+  </div>
 </div>
